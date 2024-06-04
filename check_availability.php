@@ -12,7 +12,7 @@ echo "<span style='color:red'> Already Applied for this course.</span>";
 } 
 }
 if(!empty($_POST["cid"])) {
-	$cid= $_POST["cid"];
+	$cid= $_POST["cid"]; 
 	
 		$result =mysqli_query($con,"SELECT * FROM courseenrolls WHERE course='$cid'");
 		$count=mysqli_num_rows($result);
